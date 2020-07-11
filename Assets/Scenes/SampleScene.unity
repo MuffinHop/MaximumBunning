@@ -1727,16 +1727,6 @@ PrefabInstance:
       propertyPath: _camera
       value: 
       objectReference: {fileID: 519420032}
-    - target: {fileID: 8424404626346648921, guid: 44e2fbe0fa9c1a347a65f73600dc1d02,
-        type: 3}
-      propertyPath: _acceleration
-      value: 20
-      objectReference: {fileID: 0}
-    - target: {fileID: 8424404626613225408, guid: 44e2fbe0fa9c1a347a65f73600dc1d02,
-        type: 3}
-      propertyPath: m_Drag
-      value: 0.33
-      objectReference: {fileID: 0}
     - target: {fileID: 8424404627951243164, guid: 44e2fbe0fa9c1a347a65f73600dc1d02,
         type: 3}
       propertyPath: m_Name
