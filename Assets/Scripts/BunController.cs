@@ -33,7 +33,7 @@ public class BunController : MonoBehaviour
         }
         _currentSpeed = Mathf.SmoothStep(_currentSpeed, _speed, Time.deltaTime * 12f); _speed = 0f;
         _currentRotate = Mathf.Lerp(_currentRotate, _rotate, Time.deltaTime * 4f); _rotate = 0f;
-        _bunModel.localEulerAngles = Vector3.Lerp(_bunModel.localEulerAngles, new Vector3(0, 90 + (Input.GetAxis("Horizontal") * 15), _bunModel.localEulerAngles.z), .2f);
+        _bunModel.localEulerAngles = Vector3.Lerp(_bunModel.localEulerAngles, new Vector3(90, 0 + (Input.GetAxis("Horizontal") * 15), _bunModel.localEulerAngles.z), .2f);
         
         transform.position = _sphere.transform.position;
         _camera.position = new Vector3(transform.position.x, _camera.position.y, transform.position.z);
