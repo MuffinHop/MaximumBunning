@@ -131,6 +131,138 @@ TextureImporter:
   - first:
       213: -2141512143890023412
     second: GMTK Jam 2020_42
+  - first:
+      213: -8085216494390093988
+    second: GMTK Jam 2020_0
+  - first:
+      213: -1893113059177689904
+    second: GMTK Jam 2020_1
+  - first:
+      213: -7761783330145661889
+    second: GMTK Jam 2020_2
+  - first:
+      213: 9186614785853752178
+    second: GMTK Jam 2020_3
+  - first:
+      213: -7906371709592970848
+    second: GMTK Jam 2020_4
+  - first:
+      213: -5738380624910881522
+    second: GMTK Jam 2020_5
+  - first:
+      213: 5801757760500167481
+    second: GMTK Jam 2020_6
+  - first:
+      213: 1585983167755040619
+    second: GMTK Jam 2020_7
+  - first:
+      213: -1922792823587097719
+    second: GMTK Jam 2020_8
+  - first:
+      213: -4241952233976314927
+    second: GMTK Jam 2020_9
+  - first:
+      213: 7991807084978053948
+    second: GMTK Jam 2020_10
+  - first:
+      213: 9101839951440025451
+    second: GMTK Jam 2020_11
+  - first:
+      213: 2750366367545758689
+    second: GMTK Jam 2020_12
+  - first:
+      213: 3440265587026472304
+    second: GMTK Jam 2020_13
+  - first:
+      213: 555090376767028819
+    second: GMTK Jam 2020_14
+  - first:
+      213: -9050051819938581930
+    second: GMTK Jam 2020_15
+  - first:
+      213: -4368661882812493867
+    second: GMTK Jam 2020_16
+  - first:
+      213: 224042289868220648
+    second: GMTK Jam 2020_17
+  - first:
+      213: 8370766190756792383
+    second: GMTK Jam 2020_18
+  - first:
+      213: 952809197338807870
+    second: GMTK Jam 2020_19
+  - first:
+      213: 4227633461507256999
+    second: GMTK Jam 2020_20
+  - first:
+      213: 866897750781142973
+    second: GMTK Jam 2020_21
+  - first:
+      213: 6386681330285063426
+    second: GMTK Jam 2020_22
+  - first:
+      213: -1404459263274590292
+    second: GMTK Jam 2020_23
+  - first:
+      213: 3376758152144419691
+    second: GMTK Jam 2020_24
+  - first:
+      213: 5862507133786635692
+    second: GMTK Jam 2020_25
+  - first:
+      213: -3314632004273283023
+    second: GMTK Jam 2020_26
+  - first:
+      213: -4377444782002386437
+    second: GMTK Jam 2020_27
+  - first:
+      213: -5411312952737154608
+    second: GMTK Jam 2020_28
+  - first:
+      213: 2033574636328223454
+    second: GMTK Jam 2020_29
+  - first:
+      213: 5072916403354199952
+    second: GMTK Jam 2020_30
+  - first:
+      213: 5248922173832806819
+    second: GMTK Jam 2020_31
+  - first:
+      213: -6158990568054731684
+    second: GMTK Jam 2020_32
+  - first:
+      213: -7607534603420491458
+    second: GMTK Jam 2020_33
+  - first:
+      213: -4314519732396921376
+    second: GMTK Jam 2020_34
+  - first:
+      213: 9052531687701598567
+    second: GMTK Jam 2020_35
+  - first:
+      213: 6412420718275307377
+    second: GMTK Jam 2020_36
+  - first:
+      213: -8654650741267861674
+    second: GMTK Jam 2020_37
+  - first:
+      213: -508129291605125979
+    second: GMTK Jam 2020_38
+  - first:
+      213: -5611016606920977096
+    second: GMTK Jam 2020_39
+  - first:
+      213: 8017836583505463698
+    second: GMTK Jam 2020_40
+  - first:
+      213: 2495719323426632080
+    second: GMTK Jam 2020_41
+  - first:
+      213: 4686255221660046753
+    second: GMTK Jam 2020_42
+  - first:
+      213: -9118928697656204049
+    second: GMTK Jam 2020_43
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -255,19 +387,19 @@ TextureImporter:
       name: GMTK Jam 2020_0
       rect:
         serializedVersion: 2
-        x: 11
-        y: 223
-        width: 18
-        height: 22
+        x: 9
+        y: 217
+        width: 22
+        height: 30
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ff9ebd106d6600470800000000000000
-      internalID: 8358793977739864575
+      spriteID: c57dfb78f6a8bcf80800000000000000
+      internalID: -8085216494390093988
       vertices: []
       indices: 
       edges: []
@@ -277,18 +409,18 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 35
-        y: 223
+        y: 224
         width: 18
         height: 22
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3924d766a1c9dd1e0800000000000000
-      internalID: -2171407808120143213
+      spriteID: 0dc8f0ce3bf4ab5e0800000000000000
+      internalID: -1893113059177689904
       vertices: []
       indices: 
       edges: []
@@ -298,18 +430,18 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 59
-        y: 220
+        y: 224
         width: 18
-        height: 25
+        height: 22
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 722a7802ed6755000800000000000000
-      internalID: 24056069420982823
+      spriteID: f3c8e175f2b984490800000000000000
+      internalID: -7761783330145661889
       vertices: []
       indices: 
       edges: []
@@ -319,18 +451,18 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 83
-        y: 217
+        y: 221
         width: 18
-        height: 28
+        height: 25
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2216cd7e40c1a1130800000000000000
-      internalID: 3538171264648372514
+      spriteID: 2730a2799796d7f70800000000000000
+      internalID: 9186614785853752178
       vertices: []
       indices: 
       edges: []
@@ -340,18 +472,18 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 107
-        y: 221
+        y: 218
         width: 18
-        height: 24
+        height: 28
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d1cb3fdd3f290ee40800000000000000
-      internalID: 5683704305840012317
+      spriteID: 0a95383e1dce64290800000000000000
+      internalID: -7906371709592970848
       vertices: []
       indices: 
       edges: []
@@ -360,19 +492,19 @@ TextureImporter:
       name: GMTK Jam 2020_5
       rect:
         serializedVersion: 2
-        x: 8
-        y: 184
-        width: 24
+        x: 131
+        y: 222
+        width: 18
         height: 24
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e09389022692e6a80800000000000000
-      internalID: -8471788347606943474
+      spriteID: e0de332993d2d50b0800000000000000
+      internalID: -5738380624910881522
       vertices: []
       indices: 
       edges: []
@@ -381,19 +513,19 @@ TextureImporter:
       name: GMTK Jam 2020_6
       rect:
         serializedVersion: 2
-        x: 40
-        y: 184
-        width: 24
-        height: 32
+        x: 8
+        y: 176
+        width: 56
+        height: 40
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c87835f30962dba10800000000000000
-      internalID: 1926738616564025228
+      spriteID: 9337a73b1fbf38050800000000000000
+      internalID: 5801757760500167481
       vertices: []
       indices: 
       edges: []
@@ -402,19 +534,19 @@ TextureImporter:
       name: GMTK Jam 2020_7
       rect:
         serializedVersion: 2
-        x: 88
-        y: 193
-        width: 23
-        height: 15
+        x: 72
+        y: 184
+        width: 24
+        height: 24
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d1303adf3669b85b0800000000000000
-      internalID: -5365029174880566499
+      spriteID: b67b9c5c94b820610800000000000000
+      internalID: 1585983167755040619
       vertices: []
       indices: 
       edges: []
@@ -423,19 +555,19 @@ TextureImporter:
       name: GMTK Jam 2020_8
       rect:
         serializedVersion: 2
-        x: 108
+        x: 120
         y: 193
-        width: 19
-        height: 15
+        width: 9
+        height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: afa88a950f0a450d0800000000000000
-      internalID: -3434943661620032774
+      spriteID: 983bb654d1ed055e0800000000000000
+      internalID: -1922792823587097719
       vertices: []
       indices: 
       edges: []
@@ -444,19 +576,19 @@ TextureImporter:
       name: GMTK Jam 2020_9
       rect:
         serializedVersion: 2
-        x: 89
-        y: 178
-        width: 7
-        height: 12
+        x: 130
+        y: 193
+        width: 13
+        height: 15
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 44053f10e2f328710800000000000000
-      internalID: 1693985876678496324
+      spriteID: 1d3caa30bee8125c0800000000000000
+      internalID: -4241952233976314927
       vertices: []
       indices: 
       edges: []
@@ -465,19 +597,19 @@ TextureImporter:
       name: GMTK Jam 2020_10
       rect:
         serializedVersion: 2
-        x: 99
+        x: 105
         y: 178
-        width: 10
-        height: 6
+        width: 7
+        height: 12
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ed3a478cb36fb3670800000000000000
-      internalID: 8519673856728015838
+      spriteID: c33219d833a98ee60800000000000000
+      internalID: 7991807084978053948
       vertices: []
       indices: 
       edges: []
@@ -486,19 +618,19 @@ TextureImporter:
       name: GMTK Jam 2020_11
       rect:
         serializedVersion: 2
-        x: 112
+        x: 115
         y: 178
-        width: 7
-        height: 11
+        width: 10
+        height: 6
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b7636790f83645eb0800000000000000
-      internalID: -4732047842469333381
+      spriteID: b679a04563b305e70800000000000000
+      internalID: 9101839951440025451
       vertices: []
       indices: 
       edges: []
@@ -507,19 +639,19 @@ TextureImporter:
       name: GMTK Jam 2020_12
       rect:
         serializedVersion: 2
-        x: 124
+        x: 128
         y: 178
-        width: 10
-        height: 9
+        width: 7
+        height: 11
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b5abdeda912e3e010800000000000000
-      internalID: 1217064924240263771
+      spriteID: 1e31fb3a3a34b2620800000000000000
+      internalID: 2750366367545758689
       vertices: []
       indices: 
       edges: []
@@ -528,19 +660,19 @@ TextureImporter:
       name: GMTK Jam 2020_13
       rect:
         serializedVersion: 2
-        x: 10
-        y: 170
-        width: 4
-        height: 4
+        x: 140
+        y: 178
+        width: 10
+        height: 9
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6a84c4d915074e9d0800000000000000
-      internalID: -2745946376955475802
+      spriteID: 07da6b7f2574ebf20800000000000000
+      internalID: 3440265587026472304
       vertices: []
       indices: 
       edges: []
@@ -549,19 +681,19 @@ TextureImporter:
       name: GMTK Jam 2020_14
       rect:
         serializedVersion: 2
-        x: 17
-        y: 169
-        width: 6
-        height: 6
+        x: 10
+        y: 162
+        width: 4
+        height: 4
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 792103e8aa7c84fa0800000000000000
-      internalID: -5816179383405112681
+      spriteID: 35ebf65b1c314b700800000000000000
+      internalID: 555090376767028819
       vertices: []
       indices: 
       edges: []
@@ -570,19 +702,19 @@ TextureImporter:
       name: GMTK Jam 2020_15
       rect:
         serializedVersion: 2
-        x: 25
-        y: 169
+        x: 17
+        y: 161
         width: 6
         height: 6
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 863b0058ef7364200800000000000000
-      internalID: 163880002738238312
+      spriteID: 652fea9a1d1c76280800000000000000
+      internalID: -9050051819938581930
       vertices: []
       indices: 
       edges: []
@@ -591,19 +723,19 @@ TextureImporter:
       name: GMTK Jam 2020_16
       rect:
         serializedVersion: 2
-        x: 32
-        y: 168
-        width: 8
-        height: 8
+        x: 25
+        y: 161
+        width: 6
+        height: 6
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9c4ef7b248fafdd90800000000000000
-      internalID: -7070739907748043575
+      spriteID: 5df0c2be9256f53c0800000000000000
+      internalID: -4368661882812493867
       vertices: []
       indices: 
       edges: []
@@ -612,19 +744,19 @@ TextureImporter:
       name: GMTK Jam 2020_17
       rect:
         serializedVersion: 2
-        x: 40
-        y: 168
+        x: 32
+        y: 160
         width: 8
         height: 8
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: fa9866a0b0fc939f0800000000000000
-      internalID: -488131438266906193
+      spriteID: 8e8a24e8645fb1300800000000000000
+      internalID: 224042289868220648
       vertices: []
       indices: 
       edges: []
@@ -633,19 +765,19 @@ TextureImporter:
       name: GMTK Jam 2020_18
       rect:
         serializedVersion: 2
-        x: 59
-        y: 167
-        width: 10
-        height: 10
+        x: 40
+        y: 160
+        width: 8
+        height: 8
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 96e4995538b3fe160800000000000000
-      internalID: 7056924576375721577
+      spriteID: f3888e1108fea2470800000000000000
+      internalID: 8370766190756792383
       vertices: []
       indices: 
       edges: []
@@ -654,19 +786,19 @@ TextureImporter:
       name: GMTK Jam 2020_19
       rect:
         serializedVersion: 2
-        x: 88
-        y: 162
-        width: 7
-        height: 12
+        x: 75
+        y: 159
+        width: 10
+        height: 10
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9c070654bacf5a460800000000000000
-      internalID: 7252480587483607241
+      spriteID: e3eca12baee093d00800000000000000
+      internalID: 952809197338807870
       vertices: []
       indices: 
       edges: []
@@ -675,19 +807,19 @@ TextureImporter:
       name: GMTK Jam 2020_20
       rect:
         serializedVersion: 2
-        x: 112
+        x: 104
         y: 162
-        width: 11
+        width: 7
         height: 12
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a14907132608b1950800000000000000
-      internalID: 6420866852971385882
+      spriteID: 7a2f1b9fb329baa30800000000000000
+      internalID: 4227633461507256999
       vertices: []
       indices: 
       edges: []
@@ -696,19 +828,19 @@ TextureImporter:
       name: GMTK Jam 2020_21
       rect:
         serializedVersion: 2
-        x: 99
+        x: 115
         y: 162
         width: 9
         height: 8
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 109c98c5a706ef880800000000000000
-      internalID: -8575310561812035327
+      spriteID: db725eb49e6d70c00800000000000000
+      internalID: 866897750781142973
       vertices: []
       indices: 
       edges: []
@@ -719,17 +851,17 @@ TextureImporter:
         serializedVersion: 2
         x: 128
         y: 162
-        width: 6
-        height: 8
+        width: 11
+        height: 12
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6f3faf06f9a559e60800000000000000
-      internalID: 7968374756275319798
+      spriteID: 20da241f4dc02a850800000000000000
+      internalID: 6386681330285063426
       vertices: []
       indices: 
       edges: []
@@ -738,19 +870,19 @@ TextureImporter:
       name: GMTK Jam 2020_23
       rect:
         serializedVersion: 2
-        x: 8
-        y: 144
-        width: 8
-        height: 16
+        x: 144
+        y: 162
+        width: 6
+        height: 8
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7e3bc5a89c73140c0800000000000000
-      internalID: -4593328806191909913
+      spriteID: cafd20fbdbb528ce0800000000000000
+      internalID: -1404459263274590292
       vertices: []
       indices: 
       edges: []
@@ -759,19 +891,19 @@ TextureImporter:
       name: GMTK Jam 2020_24
       rect:
         serializedVersion: 2
-        x: 24
-        y: 144
+        x: 8
+        y: 136
         width: 8
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: fe2738b45fbcbfc60800000000000000
-      internalID: 7853094629644923631
+      spriteID: b6bf8f606a7acde20800000000000000
+      internalID: 3376758152144419691
       vertices: []
       indices: 
       edges: []
@@ -780,19 +912,19 @@ TextureImporter:
       name: GMTK Jam 2020_25
       rect:
         serializedVersion: 2
-        x: 40
-        y: 144
+        x: 24
+        y: 136
         width: 8
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f272fc330dcbe7900800000000000000
-      internalID: 684191795815327535
+      spriteID: cadbb826d2fcb5150800000000000000
+      internalID: 5862507133786635692
       vertices: []
       indices: 
       edges: []
@@ -801,19 +933,19 @@ TextureImporter:
       name: GMTK Jam 2020_26
       rect:
         serializedVersion: 2
-        x: 56
-        y: 120
+        x: 40
+        y: 136
         width: 8
-        height: 40
+        height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 73561a1b5941c3fd0800000000000000
-      internalID: -2360989471486155465
+      spriteID: 1306628f0cf0002d0800000000000000
+      internalID: -3314632004273283023
       vertices: []
       indices: 
       edges: []
@@ -822,19 +954,19 @@ TextureImporter:
       name: GMTK Jam 2020_27
       rect:
         serializedVersion: 2
-        x: 89
-        y: 146
-        width: 7
-        height: 12
+        x: 56
+        y: 112
+        width: 8
+        height: 40
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 847a0f595db863ed0800000000000000
-      internalID: -2434604799087302840
+      spriteID: bf94cd8d9213043c0800000000000000
+      internalID: -4377444782002386437
       vertices: []
       indices: 
       edges: []
@@ -843,19 +975,19 @@ TextureImporter:
       name: GMTK Jam 2020_28
       rect:
         serializedVersion: 2
-        x: 99
+        x: 105
         y: 146
-        width: 10
-        height: 6
+        width: 7
+        height: 12
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: dd377b33733241ec0800000000000000
-      internalID: -3597211482364349475
+      spriteID: 0d9b1a33a8727e4b0800000000000000
+      internalID: -5411312952737154608
       vertices: []
       indices: 
       edges: []
@@ -864,19 +996,19 @@ TextureImporter:
       name: GMTK Jam 2020_29
       rect:
         serializedVersion: 2
-        x: 112
+        x: 115
         y: 146
-        width: 7
-        height: 11
+        width: 10
+        height: 6
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d85e8fd0ed69ceee0800000000000000
-      internalID: -1230442717717666419
+      spriteID: ed2869e7b55b83c10800000000000000
+      internalID: 2033574636328223454
       vertices: []
       indices: 
       edges: []
@@ -885,19 +1017,19 @@ TextureImporter:
       name: GMTK Jam 2020_30
       rect:
         serializedVersion: 2
-        x: 124
+        x: 128
         y: 146
-        width: 10
-        height: 9
+        width: 7
+        height: 11
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 68f21e4bcded946e0800000000000000
-      internalID: -1852704732177420410
+      spriteID: 097ed25679e966640800000000000000
+      internalID: 5072916403354199952
       vertices: []
       indices: 
       edges: []
@@ -906,19 +1038,19 @@ TextureImporter:
       name: GMTK Jam 2020_31
       rect:
         serializedVersion: 2
-        x: 8
-        y: 104
-        width: 8
-        height: 32
+        x: 140
+        y: 146
+        width: 10
+        height: 9
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ac1d4348151d27650800000000000000
-      internalID: 6229271382647427530
+      spriteID: 3a1c9f838eae7d840800000000000000
+      internalID: 5248922173832806819
       vertices: []
       indices: 
       edges: []
@@ -927,19 +1059,19 @@ TextureImporter:
       name: GMTK Jam 2020_32
       rect:
         serializedVersion: 2
-        x: 21
-        y: 118
-        width: 13
-        height: 18
+        x: 104
+        y: 130
+        width: 7
+        height: 12
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d524d40e8a62f6f70800000000000000
-      internalID: 9182600671991251549
+      spriteID: c5ccd18c5bed68aa0800000000000000
+      internalID: -6158990568054731684
       vertices: []
       indices: 
       edges: []
@@ -948,19 +1080,19 @@ TextureImporter:
       name: GMTK Jam 2020_33
       rect:
         serializedVersion: 2
-        x: 88
+        x: 115
         y: 130
-        width: 7
-        height: 12
+        width: 9
+        height: 8
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ab2df1151ada52c00800000000000000
-      internalID: 875296610955809466
+      spriteID: e3121aaa59b9c6690800000000000000
+      internalID: -7607534603420491458
       vertices: []
       indices: 
       edges: []
@@ -969,19 +1101,19 @@ TextureImporter:
       name: GMTK Jam 2020_34
       rect:
         serializedVersion: 2
-        x: 99
+        x: 128
         y: 130
-        width: 9
-        height: 8
+        width: 11
+        height: 12
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 45ba4724619109220800000000000000
-      internalID: 2490518177330801492
+      spriteID: 0ed6116a92fbf14c0800000000000000
+      internalID: -4314519732396921376
       vertices: []
       indices: 
       edges: []
@@ -990,19 +1122,19 @@ TextureImporter:
       name: GMTK Jam 2020_35
       rect:
         serializedVersion: 2
-        x: 112
+        x: 144
         y: 130
-        width: 11
-        height: 12
+        width: 6
+        height: 8
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b46e9a1a2aa8227e0800000000000000
-      internalID: -1791717270638434741
+      spriteID: 761db6b8b9d01ad70800000000000000
+      internalID: 9052531687701598567
       vertices: []
       indices: 
       edges: []
@@ -1011,19 +1143,19 @@ TextureImporter:
       name: GMTK Jam 2020_36
       rect:
         serializedVersion: 2
-        x: 128
-        y: 130
+        x: 8
+        y: 96
         width: 8
-        height: 10
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 43678ffa8d74afe50800000000000000
-      internalID: 6843861579733694004
+      spriteID: 177a7273bae7df850800000000000000
+      internalID: 6412420718275307377
       vertices: []
       indices: 
       edges: []
@@ -1032,19 +1164,19 @@ TextureImporter:
       name: GMTK Jam 2020_37
       rect:
         serializedVersion: 2
-        x: 8
-        y: 24
-        width: 8
+        x: 21
+        y: 88
+        width: 29
         height: 40
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6e27bb8f49e5bd6f0800000000000000
-      internalID: -658828926558440730
+      spriteID: 65f68af410184e780800000000000000
+      internalID: -8654650741267861674
       vertices: []
       indices: 
       edges: []
@@ -1054,18 +1186,18 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 8
-        y: 72
+        y: 16
         width: 8
-        height: 16
+        height: 40
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 684a7915f8c424240800000000000000
-      internalID: 4774462733399073926
+      spriteID: 5a4d7e9f913c2f8f0800000000000000
+      internalID: -508129291605125979
       vertices: []
       indices: 
       edges: []
@@ -1074,19 +1206,19 @@ TextureImporter:
       name: GMTK Jam 2020_39
       rect:
         serializedVersion: 2
-        x: 24
-        y: 48
-        width: 24
+        x: 8
+        y: 64
+        width: 8
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f9a35389d8ab03670800000000000000
-      internalID: 8516512012664388255
+      spriteID: 83558abdf1aa122b0800000000000000
+      internalID: -5611016606920977096
       vertices: []
       indices: 
       edges: []
@@ -1096,18 +1228,18 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 24
-        y: 72
-        width: 8
+        y: 40
+        width: 24
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 79e41200b63550840800000000000000
-      internalID: 5189645864643153559
+      spriteID: 29989f274e3154f60800000000000000
+      internalID: 8017836583505463698
       vertices: []
       indices: 
       edges: []
@@ -1116,19 +1248,19 @@ TextureImporter:
       name: GMTK Jam 2020_41
       rect:
         serializedVersion: 2
-        x: 40
-        y: 72
+        x: 24
+        y: 64
         width: 8
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 921641145345f4e10800000000000000
-      internalID: 2184056931999834409
+      spriteID: 0913ce3708392a220800000000000000
+      internalID: 2495719323426632080
       vertices: []
       indices: 
       edges: []
@@ -1137,19 +1269,40 @@ TextureImporter:
       name: GMTK Jam 2020_42
       rect:
         serializedVersion: 2
-        x: 56
-        y: 48
+        x: 40
+        y: 64
         width: 8
-        height: 40
+        height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c0cff352d02d742e0800000000000000
-      internalID: -2141512143890023412
+      spriteID: 1a5ddd59b4ce80140800000000000000
+      internalID: 4686255221660046753
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GMTK Jam 2020_43
+      rect:
+        serializedVersion: 2
+        x: 56
+        y: 40
+        width: 8
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fe42614e9ae037180800000000000000
+      internalID: -9118928697656204049
       vertices: []
       indices: 
       edges: []
