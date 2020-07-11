@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEditor;
 using UnityEngine;
 
@@ -19,24 +20,64 @@ public class BunController : MonoBehaviour
     [SerializeField] private Transform _kartNormal;
     [SerializeField] private Transform _bunModel;
     [SerializeField] private Transform _camera;
-
+    [SerializeField] private float _bunTimer;
+    [SerializeField] private float _startingLineTimer;
+    [SerializeField] private Transform _infoText;
+    [SerializeField] private TextMeshProUGUI _readySetGoText;
+    [SerializeField] private TextMeshProUGUI _countDownText;
     void Update()
     {
-        _speed = _acceleration * Mathf.Min(Time.time/4f,1f);
-        
-        //Steer
-        if (Input.GetAxis("Horizontal") != 0f)
+        if (_startingLineTimer > 7f)
         {
-            int dir = Input.GetAxis("Horizontal") > 0 ? 1 : -1;
-            float amount = Mathf.Abs((Input.GetAxis("Horizontal")));
-            Steer(dir, amount);
+            _countDownText.gameObject.SetActive(true);
+            _readySetGoText.gameObject.SetActive(false);
+            _bunTimer += Time.deltaTime;
+            _countDownText.text = (int)(120 - _bunTimer) + " SECONDS";
+            _speed = _acceleration * Mathf.Min(_bunTimer / 4f, 1f);
+
+            //Steer
+            if (Input.GetAxis("Horizontal") != 0f)
+            {
+                int dir = Input.GetAxis("Horizontal") > 0 ? 1 : -1;
+                float amount = Mathf.Abs((Input.GetAxis("Horizontal")));
+                Steer(dir, amount);
+            }
+
+            _currentSpeed = Mathf.SmoothStep(_currentSpeed, _speed, Time.deltaTime * 12f);
+            _speed = 0f;
+            _currentRotate = Mathf.Lerp(_currentRotate, _rotate, Time.deltaTime * 4f);
+            _rotate = 0f;
+            //_bunModel.localEulerAngles = Vector3.LerpUnclamped(_bunModel.localEulerAngles, new Vector3(0, 0 + (Input.GetAxis("Horizontal") * 15), _bunModel.localEulerAngles.z), .2f);
+            _bunModel.localEulerAngles = new Vector3(90f, _bunModel.localEulerAngles.y, _bunModel.localEulerAngles.z);
+            transform.position = _sphere.transform.position;
+            _camera.position = new Vector3(transform.position.x, _camera.position.y, transform.position.z);
         }
-        _currentSpeed = Mathf.SmoothStep(_currentSpeed, _speed, Time.deltaTime * 12f); _speed = 0f;
-        _currentRotate = Mathf.Lerp(_currentRotate, _rotate, Time.deltaTime * 4f); _rotate = 0f;
-        //_bunModel.localEulerAngles = Vector3.LerpUnclamped(_bunModel.localEulerAngles, new Vector3(0, 0 + (Input.GetAxis("Horizontal") * 15), _bunModel.localEulerAngles.z), .2f);
-        _bunModel.localEulerAngles = new Vector3(90f,_bunModel.localEulerAngles.y,_bunModel.localEulerAngles.z);
-        transform.position = _sphere.transform.position;
-        _camera.position = new Vector3(transform.position.x, _camera.position.y, transform.position.z);
+        else
+        {
+            _countDownText.gameObject.SetActive(false);
+            if (_startingLineTimer < 4.0f)
+            {
+                _readySetGoText.gameObject.SetActive(false);
+                _infoText.gameObject.SetActive(true);
+            }
+            else
+            {
+                _readySetGoText.gameObject.SetActive(true);
+                if (_startingLineTimer < 5.0f)
+                {
+                    _readySetGoText.text = "READY";
+                } else if (_startingLineTimer < 6.0f)
+                {
+                    _readySetGoText.text = "SET";
+                } else if (_startingLineTimer < 7.0f)
+                {
+                    _readySetGoText.text = "GO";
+                }
+                _infoText.gameObject.SetActive(false);
+            }
+
+        }
+        _startingLineTimer += Time.deltaTime;
     }
     
     private void FixedUpdate()
