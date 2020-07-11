@@ -22,7 +22,7 @@ public class BunController : MonoBehaviour
 
     void Update()
     {
-        _speed = _acceleration * Mathf.Min(Time.time,1f);
+        _speed = _acceleration * Mathf.Min(Time.time/4f,1f);
         
         //Steer
         if (Input.GetAxis("Horizontal") != 0f)
