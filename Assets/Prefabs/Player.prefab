@@ -51,7 +51,7 @@ MonoBehaviour:
   _currentRotate: 0
   _driftDirection: 0
   _driftPower: 0
-  _acceleration: 20
+  _acceleration: 15
   _steering: 80
   _layerMask:
     serializedVersion: 2
