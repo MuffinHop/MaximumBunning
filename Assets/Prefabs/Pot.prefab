@@ -210,6 +210,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _pointScalerPrefab: {fileID: 2865055823369033009, guid: 91d6adc6c76ad6445b78472839970a29,
     type: 3}
+  _pot: {fileID: 1525730194347599506}
 --- !u!136 &7162446771408931061
 CapsuleCollider:
   m_ObjectHideFlags: 0

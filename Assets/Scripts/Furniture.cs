@@ -6,8 +6,10 @@ public class Furniture : MonoBehaviour
 {
     private Vector3 _eulerAnglesThen;
     private bool _pointsGiven;
+    private bool _fadeOut;
     private Points _points;
     [SerializeField] private GameObject _pointScalerPrefab;
+    [SerializeField] private GameObject _pot;
     
     void Start()
     {
@@ -16,6 +18,11 @@ public class Furniture : MonoBehaviour
         _points = FindObjectOfType<Points>();
     }
 
+    void Explosion()
+    {
+        _fadeOut = true;
+        Destroy(this,1f);
+    }
     void Update()
     {
         var eulerAnglesNow = transform.up;
@@ -26,7 +33,12 @@ public class Furniture : MonoBehaviour
                 _points.ScorePoints.Invoke(100); 
                 _pointsGiven = true;
                 Instantiate(_pointScalerPrefab, transform.position + new Vector3(0.0f, 4f, 0.0f), Quaternion.Euler(90f,0f,0f));
+                Invoke("Explosion", 0.333f);
             }
+        }
+        else if(_fadeOut)
+        {
+            transform.localScale /= 1.05f;
         }
     }
 }
