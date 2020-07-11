@@ -178,7 +178,7 @@ MonoBehaviour:
   _currentRotate: 0
   _driftDirection: 0
   _driftPower: 0
-  _acceleration: 120
+  _acceleration: 110
   _steering: 90
   _layerMask:
     serializedVersion: 2
@@ -377,7 +377,7 @@ SphereCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8424404626613225415}
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 13400000, guid: f3974ae8d8fc8c2408fbb2ee4fd5962f, type: 2}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
