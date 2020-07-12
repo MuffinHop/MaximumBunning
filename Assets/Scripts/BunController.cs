@@ -21,16 +21,22 @@ public class BunController : MonoBehaviour
     [SerializeField] private Transform _bunModel;
     [SerializeField] private Transform _camera;
     [SerializeField] private float _bunTimer;
-    [SerializeField] private float _startingLineTimer;
+    [SerializeField] private float _startingLineTimer = -0.4f;
     [SerializeField] private Transform _infoText;
     [SerializeField] private TextMeshProUGUI _readySetGoText;
     [SerializeField] private TextMeshProUGUI _countDownText;
+    [SerializeField] private Transform _shade;
+    [SerializeField] private Transform _points;
+    [SerializeField] private Transform _particleFocus;
     void Update()
     {
         if (_startingLineTimer > 7f)
         {
+            _particleFocus.gameObject.SetActive(true);
+            _points.gameObject.SetActive(true);
             _countDownText.gameObject.SetActive(true);
             _readySetGoText.gameObject.SetActive(false);
+            _shade.gameObject.SetActive(false);
             _bunTimer += Time.deltaTime;
             _countDownText.text = (int)(120 - _bunTimer) + " SECONDS";
             _speed = _acceleration * Mathf.Min(_bunTimer / 4f, 1f);
@@ -54,6 +60,8 @@ public class BunController : MonoBehaviour
         }
         else
         {
+            _points.gameObject.SetActive(false);
+            _shade.gameObject.SetActive(true);
             _countDownText.gameObject.SetActive(false);
             if (_startingLineTimer < 4.0f)
             {
@@ -62,6 +70,7 @@ public class BunController : MonoBehaviour
             }
             else
             {
+                _particleFocus.gameObject.SetActive(false);
                 _readySetGoText.gameObject.SetActive(true);
                 if (_startingLineTimer < 5.0f)
                 {

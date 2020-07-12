@@ -1,7 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
-using UnityEditor.SceneManagement;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class StartScreen : MonoBehaviour
 {
@@ -17,7 +17,7 @@ public class StartScreen : MonoBehaviour
             _infoText.gameObject.SetActive(true);
             if (Input.GetButton("Jump") || Input.GetButton("Fire1"))
             {
-                EditorSceneManager.LoadScene("Assets/Scenes/Map0.unity");
+                SceneManager.LoadScene("Assets/Scenes/Map0.unity");
             }
         }
         else
