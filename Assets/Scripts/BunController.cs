@@ -50,7 +50,7 @@ public class BunController : MonoBehaviour
             _currentSpeed = Mathf.SmoothStep(_currentSpeed, _speed, Mathf.Min(Mathf.Max(Time.deltaTime * _acceleration,0f),1f));
             _animator.speed = Mathf.Min(_currentSpeed / _maxSpeed * 2f, 1f);
             _speed = 0f;
-            _currentRotate = Mathf.Lerp(_currentRotate, _rotate, Time.deltaTime * 32f);
+            _currentRotate = Mathf.Lerp(_currentRotate, _rotate, Time.deltaTime * 64f);
             _rotate = 0f;
             //_bunModel.localEulerAngles = Vector3.LerpUnclamped(_bunModel.localEulerAngles, new Vector3(0, 0 + (Input.GetAxis("Horizontal") * 15), _bunModel.localEulerAngles.z), .1f);
 
