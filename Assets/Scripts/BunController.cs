@@ -41,7 +41,7 @@ public class BunController : MonoBehaviour
                 _speed *= 1.0f - amount * _turningSlowdown;
             }
 
-            float turbo = Input.GetAxis("Turbo")*2f - 1f;
+            float turbo = Input.GetAxis("Turbo") * 2f - 1f;
             float accelerationPower = (Mathf.Max(Mathf.Max(Input.GetAxis("L2"), Input.GetAxis("R2")),turbo) + 1f) / 2f;
             
             _speed /= 3.0f - accelerationPower * 2f;
@@ -50,10 +50,11 @@ public class BunController : MonoBehaviour
             _currentSpeed = Mathf.SmoothStep(_currentSpeed, _speed, Mathf.Min(Mathf.Max(Time.deltaTime * _acceleration,0f),1f));
             _animator.speed = Mathf.Min(_currentSpeed / _maxSpeed * 2f, 1f);
             _speed = 0f;
-            _currentRotate = Mathf.Lerp(_currentRotate, _rotate, Time.deltaTime * 4f);
+            _currentRotate = Mathf.Lerp(_currentRotate, _rotate, Time.deltaTime * 32f);
             _rotate = 0f;
-            //_bunModel.localEulerAngles = Vector3.LerpUnclamped(_bunModel.localEulerAngles, new Vector3(0, 0 + (Input.GetAxis("Horizontal") * 15), _bunModel.localEulerAngles.z), .2f);
-            _bunModel.localEulerAngles = new Vector3(90f, _bunModel.localEulerAngles.y, _bunModel.localEulerAngles.z);
+            //_bunModel.localEulerAngles = Vector3.LerpUnclamped(_bunModel.localEulerAngles, new Vector3(0, 0 + (Input.GetAxis("Horizontal") * 15), _bunModel.localEulerAngles.z), .1f);
+
+            //_bunModel.localEulerAngles = new Vector3(90f, _bunModel.localEulerAngles.y, _bunModel.localEulerAngles.z);
             transform.position = _sphere.transform.position;
             _camera.position = new Vector3(transform.position.x, _camera.position.y, transform.position.z);
         
@@ -83,6 +84,9 @@ public class BunController : MonoBehaviour
         _kartNormal.Rotate(0, transform.eulerAngles.y, 0);
         transform.position = _sphere.transform.position;
         _camera.position = new Vector3(transform.position.x, _camera.position.y, transform.position.z);
+        _bunModel.position = transform.position;
+        _bunModel.rotation = transform.rotation;
+        _bunModel.rotation = Quaternion.Euler(90f, _bunModel.rotation.eulerAngles.y + (Input.GetAxis("Horizontal") * 20f), _bunModel.rotation.eulerAngles.z);
     }
 
     public void Steer(int direction, float amount)
