@@ -4,16 +4,17 @@ using System.Collections.Generic;
 using TMPro;
 using UnityEditor;
 using UnityEngine;
+using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class BunController : MonoBehaviour
 {
     [SerializeField] private Rigidbody _sphere;
 
-    [SerializeField] private float _speed, _currentSpeed;
-    [SerializeField] private float _rotate, _currentRotate;
-    [SerializeField] private float _driftDirection;
-    [SerializeField] private float _driftPower;
+    private float _speed, _currentSpeed;
+    private float _rotate, _currentRotate;
     
+    [SerializeField] private float _maxSpeed = 30f;
     [SerializeField] private float _acceleration = 30f;
     [SerializeField] private float _steering = 80f;
     [SerializeField] private LayerMask _layerMask;
@@ -21,35 +22,33 @@ public class BunController : MonoBehaviour
     [SerializeField] private Transform _bunModel;
     [SerializeField] private Transform _camera;
     [SerializeField] private float _bunTimer;
-    [SerializeField] private float _startingLineTimer = -0.4f;
-    [SerializeField] private Transform _infoText;
-    [SerializeField] private TextMeshProUGUI _readySetGoText;
-    [SerializeField] private TextMeshProUGUI _countDownText;
-    [SerializeField] private Transform _shade;
-    [SerializeField] private Transform _points;
-    [SerializeField] private Transform _particleFocus;
+    [SerializeField] private AudioSource _audioSource;
+    [SerializeField, Range(0,1f)] private float _turningSlowdown;
+    [SerializeField] private Animator _animator;
+    public static bool DONE = false;
+    private float _doneTimer;
+
     void Update()
     {
-        if (_startingLineTimer > 7f)
-        {
-            _particleFocus.gameObject.SetActive(true);
-            _points.gameObject.SetActive(true);
-            _countDownText.gameObject.SetActive(true);
-            _readySetGoText.gameObject.SetActive(false);
-            _shade.gameObject.SetActive(false);
             _bunTimer += Time.deltaTime;
-            _countDownText.text = (int)(120 - _bunTimer) + " SECONDS";
-            _speed = _acceleration * Mathf.Min(_bunTimer / 4f, 1f);
-
+            _speed = Mathf.Min(_bunTimer / 4f, 1f);
             //Steer
             if (Input.GetAxis("Horizontal") != 0f)
             {
                 int dir = Input.GetAxis("Horizontal") > 0 ? 1 : -1;
                 float amount = Mathf.Abs((Input.GetAxis("Horizontal")));
                 Steer(dir, amount);
+                _speed *= 1.0f - amount * _turningSlowdown;
             }
 
-            _currentSpeed = Mathf.SmoothStep(_currentSpeed, _speed, Time.deltaTime * 12f);
+            float turbo = Input.GetAxis("Turbo")*2f - 1f;
+            float accelerationPower = (Mathf.Max(Mathf.Max(Input.GetAxis("L2"), Input.GetAxis("R2")),turbo) + 1f) / 2f;
+            
+            _speed /= 3.0f - accelerationPower * 2f;
+            _speed *= _maxSpeed;
+            
+            _currentSpeed = Mathf.SmoothStep(_currentSpeed, _speed, Mathf.Min(Mathf.Max(Time.deltaTime * _acceleration,0f),1f));
+            _animator.speed = Mathf.Min(_currentSpeed / _maxSpeed * 2f, 1f);
             _speed = 0f;
             _currentRotate = Mathf.Lerp(_currentRotate, _rotate, Time.deltaTime * 4f);
             _rotate = 0f;
@@ -57,40 +56,15 @@ public class BunController : MonoBehaviour
             _bunModel.localEulerAngles = new Vector3(90f, _bunModel.localEulerAngles.y, _bunModel.localEulerAngles.z);
             transform.position = _sphere.transform.position;
             _camera.position = new Vector3(transform.position.x, _camera.position.y, transform.position.z);
-        }
-        else
-        {
-            _points.gameObject.SetActive(false);
-            _shade.gameObject.SetActive(true);
-            _countDownText.gameObject.SetActive(false);
-            if (_startingLineTimer < 4.0f)
-            {
-                _readySetGoText.gameObject.SetActive(false);
-                _infoText.gameObject.SetActive(true);
-            }
-            else
-            {
-                _particleFocus.gameObject.SetActive(false);
-                _readySetGoText.gameObject.SetActive(true);
-                if (_startingLineTimer < 5.0f)
-                {
-                    _readySetGoText.text = "READY";
-                } else if (_startingLineTimer < 6.0f)
-                {
-                    _readySetGoText.text = "SET";
-                } else if (_startingLineTimer < 7.0f)
-                {
-                    _readySetGoText.text = "GO";
-                }
-                _infoText.gameObject.SetActive(false);
-            }
-
-        }
-        _startingLineTimer += Time.deltaTime;
+        
     }
     
     private void FixedUpdate()
     {
+        if (float.IsNaN(_currentSpeed))
+        {
+            _currentSpeed = 0f;
+        }
         //Forward Acceleration
         _sphere.AddForce(transform.forward * _currentSpeed, ForceMode.Acceleration);
 

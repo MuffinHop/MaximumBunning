@@ -8,6 +8,7 @@ public class PointScaler : MonoBehaviour
     void Start()
     {
         _existed = 0;
+        Destroy(gameObject, 2f);
         Destroy(this, 2f);
     }
 

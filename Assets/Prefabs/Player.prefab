@@ -172,13 +172,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _sphere: {fileID: 8424404626613225408}
-  _speed: 0
-  _currentSpeed: 0
-  _rotate: 0
-  _currentRotate: 0
-  _driftDirection: 0
-  _driftPower: 0
-  _acceleration: 110
+  _maxSpeed: 120
+  _acceleration: 12
   _steering: 90
   _layerMask:
     serializedVersion: 2
@@ -186,6 +181,10 @@ MonoBehaviour:
   _kartNormal: {fileID: 8424404628075679273}
   _bunModel: {fileID: 8424404626548407913}
   _camera: {fileID: 0}
+  _bunTimer: 0
+  _audioSource: {fileID: 0}
+  _turningSlowdown: 0
+  _animator: {fileID: 283563001}
 --- !u!1 &8424404626548407912
 GameObject:
   m_ObjectHideFlags: 0

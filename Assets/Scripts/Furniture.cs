@@ -21,6 +21,7 @@ public class Furniture : MonoBehaviour
     void Explosion()
     {
         _fadeOut = true;
+        Destroy(gameObject,1f);
         Destroy(this,1f);
     }
     void Update()

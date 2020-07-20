@@ -15,6 +15,10 @@ public class Points : MonoBehaviour
     private int _score;
     private TextMeshProUGUI _textMeshPro;
 
+    public int GetScore()
+    {
+        return _score;    
+    }
     void Start()
     {
         _textMeshPro = transform.GetComponent<TextMeshProUGUI>();
