@@ -89,7 +89,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4752607379778695144}
   - component: {fileID: 328221769137800430}
-  - component: {fileID: 328221769137800433}
+  - component: {fileID: 7379255341329281349}
   - component: {fileID: 8296172667850033126}
   - component: {fileID: 8296172667850033127}
   - component: {fileID: 8296172667850033128}
@@ -132,7 +132,7 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!114 &328221769137800433
+--- !u!114 &7379255341329281349
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -141,12 +141,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 8624392065218584059}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9463f01257617d045a0c970c21e87deb, type: 3}
+  m_Script: {fileID: 11500000, guid: e4207ff690aa55e47a9a95855032b821, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   _pointScalerPrefab: {fileID: 2865055823369033009, guid: 91d6adc6c76ad6445b78472839970a29,
     type: 3}
-  _pot: {fileID: 2856324827515844710}
 --- !u!65 &8296172667850033126
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -158,8 +157,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.1, y: 1, z: 0.1}
-  m_Center: {x: -1, y: 0.1, z: 0}
+  m_Size: {x: 0.4, y: 1, z: 0.4}
+  m_Center: {x: -1.5, y: -0.4, z: 1.5}
 --- !u!65 &8296172667850033127
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -171,8 +170,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.1, y: 1, z: 0.1}
-  m_Center: {x: 2, y: 0.1, z: 0}
+  m_Size: {x: 0.4, y: 1, z: 0.4}
+  m_Center: {x: 2.5, y: -0.4, z: 1.5}
 --- !u!65 &8296172667850033128
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -184,8 +183,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.1, y: 1, z: 0.1}
-  m_Center: {x: 2, y: 0.1, z: -2}
+  m_Size: {x: 0.4, y: 1, z: 0.4}
+  m_Center: {x: 2.5, y: 0.1, z: -2}
 --- !u!65 &8296172667850033129
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -197,5 +196,5 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.1, y: 1, z: 0.1}
-  m_Center: {x: -1, y: 0.1, z: -2}
+  m_Size: {x: 0.4, y: 1, z: 0.4}
+  m_Center: {x: -1.5, y: 0.1, z: -2}

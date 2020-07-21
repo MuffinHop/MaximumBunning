@@ -4,12 +4,11 @@ using UnityEngine;
 
 public class Furniture : MonoBehaviour
 {
-    private Vector3 _eulerAnglesThen;
-    private bool _pointsGiven;
-    private bool _fadeOut;
-    private Points _points;
-    [SerializeField] private GameObject _pointScalerPrefab;
-    [SerializeField] private GameObject _pot;
+    protected Vector3 _eulerAnglesThen;
+    protected bool _pointsGiven;
+    protected bool _fadeOut;
+    protected Points _points;
+    [SerializeField] protected GameObject _pointScalerPrefab;
     
     void Start()
     {
@@ -26,6 +25,20 @@ public class Furniture : MonoBehaviour
     }
     void Update()
     {
+        if ((Time.frameCount % 10) == 0)
+        {
+            if (!GetComponentInChildren<Renderer>().isVisible)
+            {
+                var furniRigid = GetComponent<Rigidbody>();
+                furniRigid.constraints = RigidbodyConstraints.FreezeRotation;
+            }
+            else
+            {
+                var furniRigid = GetComponent<Rigidbody>();
+                furniRigid.constraints = RigidbodyConstraints.None;
+            }
+        }
+
         var eulerAnglesNow = transform.up;
         if (!_pointsGiven)
         {

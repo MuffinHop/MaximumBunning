@@ -301,6 +301,7 @@ GameObject:
   - component: {fileID: 8424404626613225410}
   - component: {fileID: 8424404626613225413}
   - component: {fileID: 8424404626613225408}
+  - component: {fileID: 5917845200764796167}
   m_Layer: 0
   m_Name: Collider
   m_TagString: Player
@@ -398,6 +399,19 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 4
   m_CollisionDetection: 0
+--- !u!135 &5917845200764796167
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8424404626613225415}
+  m_Material: {fileID: 13400000, guid: f3974ae8d8fc8c2408fbb2ee4fd5962f, type: 2}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.25
+  m_Center: {x: 0, y: 0, z: -0.66}
 --- !u!1 &8424404627383915618
 GameObject:
   m_ObjectHideFlags: 0
