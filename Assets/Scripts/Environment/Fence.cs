@@ -2,45 +2,34 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Fence : MonoBehaviour
+public class Fence : Environment
 {
     [SerializeField] private Transform _southConnector;
     [SerializeField] private Transform _northConnector;
     [SerializeField] private Transform _eastConnector;
     [SerializeField] private Transform _westConnector;
-    private Vector2Int _gridPosition;
-    private Pointer _pointer;
 
-    private void CheckConnections()
+    protected override void CheckConnections()
     {
-        if (_pointer.GetFence(_gridPosition.x, _gridPosition.y - 1) != null)
+        if (_pointer.GetEnvironment(_gridPosition.x, _gridPosition.y - 1) != null)
         {
             SetSouthConnector(true);
         }
                     
-        if (_pointer.GetFence(_gridPosition.x, _gridPosition.y + 1) != null)
+        if (_pointer.GetEnvironment(_gridPosition.x, _gridPosition.y + 1) != null)
         {
             SetNorthConnector(true);
         }
                     
-        if (_pointer.GetFence(_gridPosition.x - 1, _gridPosition.y) != null)
+        if (_pointer.GetEnvironment(_gridPosition.x - 1, _gridPosition.y) != null)
         {
             SetWestConnector(true);
         }
                     
-        if (_pointer.GetFence(_gridPosition.x + 1, _gridPosition.y) != null)
+        if (_pointer.GetEnvironment(_gridPosition.x + 1, _gridPosition.y) != null)
         {
             SetEastConnector(true);
         }
-    }
-    public void SetGridPoint(Vector2Int gridPosition)
-    {
-        _gridPosition = gridPosition;
-    }
-    public void SetPointer(Pointer pointer)
-    {
-        _pointer = pointer;
-        _pointer.FenceChanged.AddListener(CheckConnections);
     }
     private void SetSouthConnector(bool active)
     {

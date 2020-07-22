@@ -3,20 +3,22 @@ using System.Collections.Generic;
 using UnityEditor.PackageManager;
 using UnityEngine;
 using UnityEngine.Events;
+using UnityEngine.EventSystems;
+using UnityEngine.Serialization;
 
 public class Pointer : MonoBehaviour
 {
     [SerializeField]private Transform _planePointer;
-    [SerializeField]private GameObject _fenceBase;
+    [SerializeField] private LevelEditorMode _levelEditorMode;
     private MeshCollider _meshCollider;
     private GameObject[,] map = new GameObject[32, 32];
-    public UnityEvent FenceChanged;
+    public UnityEvent EnviromentChanged;
     
     void Start()
     {
         _meshCollider = GetComponent<MeshCollider>();
     }
-    public Fence GetFence(int x, int y)
+    public Fence GetEnvironment(int x, int y)
     {
         GameObject furni = map[x, y];
         if (furni == null)
@@ -25,7 +27,7 @@ public class Pointer : MonoBehaviour
         }
         return furni.GetComponent<Fence>();
     }
-    public Fence GetFence(Vector3 point)
+    public Fence GetEnvironment(Vector3 point)
     {
         Vector2Int gridPosition = new Vector2Int(Mathf.FloorToInt(16f + point.x), Mathf.FloorToInt(f: 16f + point.z));
         GameObject furni = map[gridPosition.x, gridPosition.y];
@@ -42,7 +44,7 @@ public class Pointer : MonoBehaviour
         RaycastHit getInfo;
 
         
-        if (_meshCollider.Raycast(ray, out getInfo, 1000f))
+        if (!EventSystem.current.IsPointerOverGameObject() && _meshCollider.Raycast(ray, out getInfo, 1000f))
         {
             var point = new Vector3(getInfo.point.x, getInfo.point.y, getInfo.point.z);
             var signPoint = new Vector3(Mathf.Sign(point.x), Mathf.Sign(point.y), Mathf.Sign(point.z));
@@ -54,14 +56,14 @@ public class Pointer : MonoBehaviour
             if (Input.GetMouseButtonDown(0))
             {
                 Vector2Int gridPosition = new Vector2Int(Mathf.FloorToInt(16f + point.x), Mathf.FloorToInt(f: 16f + point.z));
-                if (GetFence(gridPosition.x, gridPosition.y) == null)
+                if (GetEnvironment(gridPosition.x, gridPosition.y) == null)
                 {
-                    var fence = map[gridPosition.x, gridPosition.y] = Instantiate(_fenceBase, _planePointer.position, Quaternion.identity);
-                    var fenceControl = fence.GetComponent<Fence>();
-                    fence.transform.SetParent(transform);
-                    fenceControl.SetPointer(this);
-                    fenceControl.SetGridPoint(gridPosition);
-                    FenceChanged.Invoke();
+                    var environmentGameObject = map[gridPosition.x, gridPosition.y] = Instantiate(_levelEditorMode.GetSelectedPiece().Prefab, _planePointer.position, Quaternion.identity);
+                    var environmentControl = environmentGameObject.GetComponent<Environment>();
+                    environmentGameObject.transform.SetParent(transform);
+                    environmentControl.SetPointer(this);
+                    environmentControl.SetGridPoint(gridPosition);
+                    EnviromentChanged.Invoke();
                 }
             }
         }

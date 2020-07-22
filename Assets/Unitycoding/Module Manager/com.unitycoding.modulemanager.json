@@ -1,0 +1,22 @@
+{
+    "name": "Module Manager",
+    "id": "com.unitycoding.modulemanager",
+	"assetPath":"Assets/Unitycoding/Module Manager",
+    "version": "1.0.0",
+    "unityVersion": "2019.1.1",
+    "downloadPath": "",
+    "author": "Konstantin Janson",
+    "email": "support@unitycoding.com",
+    "description": "Module manager allows you to download and import unity assets.",
+    "dependencies": [],
+    "changelogs": 
+    [
+        {
+            "version": "1.0.0",
+            "changes": 
+            [
+                "Initial Release"
+            ]
+        }
+    ]
+}

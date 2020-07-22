@@ -1,0 +1,22 @@
+{
+    "name": "Flat GUI",
+    "id": "com.unitycoding.flatgui",
+    "assetPath":"Assets/Unitycoding/Flat GUI",
+    "version": "1.0.0",
+    "unityVersion": "2019.1.1",
+    "downloadPath": "",
+    "author": "Konstantin Janson",
+    "email": "support@unitycoding.com",
+    "description": "White ui elements and icons for prototyping and examples.",
+    "dependencies": [],
+    "changelogs": 
+    [
+        {
+            "version": "1.0.0",
+            "changes": 
+            [
+                "Initial Release"
+            ]
+        }
+    ]
+}
